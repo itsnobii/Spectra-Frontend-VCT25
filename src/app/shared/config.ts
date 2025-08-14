@@ -4,7 +4,7 @@ export class Config {
   sponsorImageUrls: string[] = [];
   sponsorImageRotateSpeed = 5000; // in milliseconds
 
-  mapbanEndpoint = "https://eu.valospectra.com:11201";
+  mapbanEndpoint = "https://mapban-socket.valospectra.com/";
 
   attackerColorPrimary = "#b82e3c";
   attackerColorSecondary = "#ff4557";
