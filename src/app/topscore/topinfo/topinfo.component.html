@@ -1,19 +1,19 @@
 <div class="topinfo-container"
   [style.opacity]="!mapInfoForSlot(0).type ? '0' : '1'"
 >
-  <app-mapinfo
+  <app-mapinfo *ngIf="mapInfoForSlot(0).type !== 'disabled'"
     [map]="match.map"
     [mapinfo]="mapInfoForSlot(0)"
     [slotType]="'past'"
     [isDecider]="isDeciderForSlot(0)">
   </app-mapinfo>
-  <app-mapinfo
+  <app-mapinfo *ngIf="mapInfoForSlot(1).type !== 'disabled'"
     [map]="match.map"
     [mapinfo]="mapInfoForSlot(1)"
     [slotType]="'present'"
     [isDecider]="isDeciderForSlot(1)">
   </app-mapinfo>
-  <app-mapinfo
+  <app-mapinfo *ngIf="mapInfoForSlot(2).type !== 'disabled'"
     [map]="match.map"
     [mapinfo]="mapInfoForSlot(2)"
     [slotType]="'future'"
